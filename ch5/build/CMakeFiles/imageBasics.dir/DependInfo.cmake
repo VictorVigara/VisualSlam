@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/victor/slambook2/ch5/imageBasics.cpp" "CMakeFiles/imageBasics.dir/imageBasics.o" "gcc" "CMakeFiles/imageBasics.dir/imageBasics.o.d"
+  "/home/victor/VisualSlam/ch5/imageBasics.cpp" "CMakeFiles/imageBasics.dir/imageBasics.cpp.o" "gcc" "CMakeFiles/imageBasics.dir/imageBasics.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

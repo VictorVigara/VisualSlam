@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/victor/slambook2/ch5/undistortImage.cpp" "CMakeFiles/undistortImage.dir/undistortImage.o" "gcc" "CMakeFiles/undistortImage.dir/undistortImage.o.d"
+  "/home/victor/VisualSlam/ch5/undistortImage.cpp" "CMakeFiles/undistortImage.dir/undistortImage.cpp.o" "gcc" "CMakeFiles/undistortImage.dir/undistortImage.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

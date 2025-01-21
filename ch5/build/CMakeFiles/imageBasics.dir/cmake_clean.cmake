@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/imageBasics.dir/imageBasics.o"
-  "CMakeFiles/imageBasics.dir/imageBasics.o.d"
+  "CMakeFiles/imageBasics.dir/imageBasics.cpp.o"
+  "CMakeFiles/imageBasics.dir/imageBasics.cpp.o.d"
   "imageBasics"
   "imageBasics.pdb"
 )

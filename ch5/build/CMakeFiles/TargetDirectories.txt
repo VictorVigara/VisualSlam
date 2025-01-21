@@ -1,4 +1,6 @@
-/home/victor/slambook2/ch5/build/CMakeFiles/imageBasics.dir
-/home/victor/slambook2/ch5/build/CMakeFiles/undistortImage.dir
-/home/victor/slambook2/ch5/build/CMakeFiles/edit_cache.dir
-/home/victor/slambook2/ch5/build/CMakeFiles/rebuild_cache.dir
+/home/victor/VisualSlam/ch5/build/CMakeFiles/imageBasics.dir
+/home/victor/VisualSlam/ch5/build/CMakeFiles/undistortImage.dir
+/home/victor/VisualSlam/ch5/build/CMakeFiles/stereoVision.dir
+/home/victor/VisualSlam/ch5/build/CMakeFiles/jointMap.dir
+/home/victor/VisualSlam/ch5/build/CMakeFiles/edit_cache.dir
+/home/victor/VisualSlam/ch5/build/CMakeFiles/rebuild_cache.dir

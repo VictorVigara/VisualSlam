@@ -57,10 +57,10 @@ RM = /home/victor/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/victor/slambook2/ch5
+CMAKE_SOURCE_DIR = /home/victor/VisualSlam/ch5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/victor/slambook2/ch5/build
+CMAKE_BINARY_DIR = /home/victor/VisualSlam/ch5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/slambook2/ch5/build/CMakeFiles /home/victor/slambook2/ch5/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/VisualSlam/ch5/build/CMakeFiles /home/victor/VisualSlam/ch5/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/slambook2/ch5/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/VisualSlam/ch5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,35 +142,127 @@ undistortImage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/build
 .PHONY : undistortImage/fast
 
-# target to build an object file
-imageBasics.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.o
+#=============================================================================
+# Target rules for targets named stereoVision
+
+# Build rule for target.
+stereoVision: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stereoVision
+.PHONY : stereoVision
+
+# fast build rule for target.
+stereoVision/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/build
+.PHONY : stereoVision/fast
+
+#=============================================================================
+# Target rules for targets named jointMap
+
+# Build rule for target.
+jointMap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 jointMap
+.PHONY : jointMap
+
+# fast build rule for target.
+jointMap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/build
+.PHONY : jointMap/fast
+
+imageBasics.o: imageBasics.cpp.o
 .PHONY : imageBasics.o
 
-# target to preprocess a source file
-imageBasics.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.i
+# target to build an object file
+imageBasics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.cpp.o
+.PHONY : imageBasics.cpp.o
+
+imageBasics.i: imageBasics.cpp.i
 .PHONY : imageBasics.i
 
-# target to generate assembly for a file
-imageBasics.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.s
+# target to preprocess a source file
+imageBasics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.cpp.i
+.PHONY : imageBasics.cpp.i
+
+imageBasics.s: imageBasics.cpp.s
 .PHONY : imageBasics.s
 
+# target to generate assembly for a file
+imageBasics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.cpp.s
+.PHONY : imageBasics.cpp.s
+
+jointMap.o: jointMap.cpp.o
+.PHONY : jointMap.o
+
 # target to build an object file
-undistortImage.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.o
-.PHONY : undistortImage.o
+jointMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/jointMap.cpp.o
+.PHONY : jointMap.cpp.o
+
+jointMap.i: jointMap.cpp.i
+.PHONY : jointMap.i
 
 # target to preprocess a source file
-undistortImage.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.i
-.PHONY : undistortImage.i
+jointMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/jointMap.cpp.i
+.PHONY : jointMap.cpp.i
+
+jointMap.s: jointMap.cpp.s
+.PHONY : jointMap.s
 
 # target to generate assembly for a file
-undistortImage.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.s
+jointMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/jointMap.cpp.s
+.PHONY : jointMap.cpp.s
+
+stereoVision.o: stereoVision.cpp.o
+.PHONY : stereoVision.o
+
+# target to build an object file
+stereoVision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/stereoVision.cpp.o
+.PHONY : stereoVision.cpp.o
+
+stereoVision.i: stereoVision.cpp.i
+.PHONY : stereoVision.i
+
+# target to preprocess a source file
+stereoVision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/stereoVision.cpp.i
+.PHONY : stereoVision.cpp.i
+
+stereoVision.s: stereoVision.cpp.s
+.PHONY : stereoVision.s
+
+# target to generate assembly for a file
+stereoVision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/stereoVision.cpp.s
+.PHONY : stereoVision.cpp.s
+
+undistortImage.o: undistortImage.cpp.o
+.PHONY : undistortImage.o
+
+# target to build an object file
+undistortImage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.o
+.PHONY : undistortImage.cpp.o
+
+undistortImage.i: undistortImage.cpp.i
+.PHONY : undistortImage.i
+
+# target to preprocess a source file
+undistortImage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.i
+.PHONY : undistortImage.cpp.i
+
+undistortImage.s: undistortImage.cpp.s
 .PHONY : undistortImage.s
+
+# target to generate assembly for a file
+undistortImage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.s
+.PHONY : undistortImage.cpp.s
 
 # Help Target
 help:
@@ -181,10 +273,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... imageBasics"
+	@echo "... jointMap"
+	@echo "... stereoVision"
 	@echo "... undistortImage"
 	@echo "... imageBasics.o"
 	@echo "... imageBasics.i"
 	@echo "... imageBasics.s"
+	@echo "... jointMap.o"
+	@echo "... jointMap.i"
+	@echo "... jointMap.s"
+	@echo "... stereoVision.o"
+	@echo "... stereoVision.i"
+	@echo "... stereoVision.s"
 	@echo "... undistortImage.o"
 	@echo "... undistortImage.i"
 	@echo "... undistortImage.s"

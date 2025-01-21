@@ -53,10 +53,10 @@ RM = /home/victor/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E rm 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/victor/slambook2/ch5
+CMAKE_SOURCE_DIR = /home/victor/VisualSlam/ch5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/victor/slambook2/ch5/build
+CMAKE_BINARY_DIR = /home/victor/VisualSlam/ch5/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/undistortImage.dir/depend.make
@@ -69,28 +69,28 @@ include CMakeFiles/undistortImage.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/undistortImage.dir/flags.make
 
-CMakeFiles/undistortImage.dir/undistortImage.o: CMakeFiles/undistortImage.dir/flags.make
-CMakeFiles/undistortImage.dir/undistortImage.o: /home/victor/slambook2/ch5/undistortImage.cpp
-CMakeFiles/undistortImage.dir/undistortImage.o: CMakeFiles/undistortImage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/victor/slambook2/ch5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/undistortImage.dir/undistortImage.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/undistortImage.dir/undistortImage.o -MF CMakeFiles/undistortImage.dir/undistortImage.o.d -o CMakeFiles/undistortImage.dir/undistortImage.o -c /home/victor/slambook2/ch5/undistortImage.cpp
+CMakeFiles/undistortImage.dir/undistortImage.cpp.o: CMakeFiles/undistortImage.dir/flags.make
+CMakeFiles/undistortImage.dir/undistortImage.cpp.o: /home/victor/VisualSlam/ch5/undistortImage.cpp
+CMakeFiles/undistortImage.dir/undistortImage.cpp.o: CMakeFiles/undistortImage.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/victor/VisualSlam/ch5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/undistortImage.dir/undistortImage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/undistortImage.dir/undistortImage.cpp.o -MF CMakeFiles/undistortImage.dir/undistortImage.cpp.o.d -o CMakeFiles/undistortImage.dir/undistortImage.cpp.o -c /home/victor/VisualSlam/ch5/undistortImage.cpp
 
-CMakeFiles/undistortImage.dir/undistortImage.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/undistortImage.dir/undistortImage.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/victor/slambook2/ch5/undistortImage.cpp > CMakeFiles/undistortImage.dir/undistortImage.i
+CMakeFiles/undistortImage.dir/undistortImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/undistortImage.dir/undistortImage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/victor/VisualSlam/ch5/undistortImage.cpp > CMakeFiles/undistortImage.dir/undistortImage.cpp.i
 
-CMakeFiles/undistortImage.dir/undistortImage.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/undistortImage.dir/undistortImage.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/victor/slambook2/ch5/undistortImage.cpp -o CMakeFiles/undistortImage.dir/undistortImage.s
+CMakeFiles/undistortImage.dir/undistortImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/undistortImage.dir/undistortImage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/victor/VisualSlam/ch5/undistortImage.cpp -o CMakeFiles/undistortImage.dir/undistortImage.cpp.s
 
 # Object files for target undistortImage
 undistortImage_OBJECTS = \
-"CMakeFiles/undistortImage.dir/undistortImage.o"
+"CMakeFiles/undistortImage.dir/undistortImage.cpp.o"
 
 # External object files for target undistortImage
 undistortImage_EXTERNAL_OBJECTS =
 
-undistortImage: CMakeFiles/undistortImage.dir/undistortImage.o
+undistortImage: CMakeFiles/undistortImage.dir/undistortImage.cpp.o
 undistortImage: CMakeFiles/undistortImage.dir/build.make
 undistortImage: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
 undistortImage: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
@@ -141,7 +141,7 @@ undistortImage: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
 undistortImage: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
 undistortImage: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
 undistortImage: CMakeFiles/undistortImage.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/victor/slambook2/ch5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable undistortImage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/victor/VisualSlam/ch5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable undistortImage"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/undistortImage.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/undistortImage.dir/clean:
 .PHONY : CMakeFiles/undistortImage.dir/clean
 
 CMakeFiles/undistortImage.dir/depend:
-	cd /home/victor/slambook2/ch5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/victor/slambook2/ch5 /home/victor/slambook2/ch5 /home/victor/slambook2/ch5/build /home/victor/slambook2/ch5/build /home/victor/slambook2/ch5/build/CMakeFiles/undistortImage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/victor/VisualSlam/ch5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/victor/VisualSlam/ch5 /home/victor/VisualSlam/ch5 /home/victor/VisualSlam/ch5/build /home/victor/VisualSlam/ch5/build /home/victor/VisualSlam/ch5/build/CMakeFiles/undistortImage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/undistortImage.dir/depend
 
