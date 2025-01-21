@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/victor/slambook2/build",
+  "command": "/usr/bin/c++  -I/usr/include/eigen3 -g -o CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o -c /home/victor/slambook2/ch3/eigenMatrix.cpp",
+  "file": "/home/victor/slambook2/ch3/eigenMatrix.cpp",
+  "output": "CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o"
+},
+{
+  "directory": "/home/victor/slambook2/build",
+  "command": "/usr/bin/c++  -I/usr/include/eigen3 -g -o CMakeFiles/useGeometry.dir/useGeometry.cpp.o -c /home/victor/slambook2/ch3/useGeometry.cpp",
+  "file": "/home/victor/slambook2/ch3/useGeometry.cpp",
+  "output": "CMakeFiles/useGeometry.dir/useGeometry.cpp.o"
+},
+{
+  "directory": "/home/victor/slambook2/build",
+  "command": "/usr/bin/c++  -I/usr/include/eigen3 -g -o CMakeFiles/coordinateTransform.dir/coordinateTransform.cpp.o -c /home/victor/slambook2/ch3/coordinateTransform.cpp",
+  "file": "/home/victor/slambook2/ch3/coordinateTransform.cpp",
+  "output": "CMakeFiles/coordinateTransform.dir/coordinateTransform.cpp.o"
+},
+{
+  "directory": "/home/victor/slambook2/build",
+  "command": "/usr/bin/c++ -DHAVE_EIGEN -DHAVE_EPOXY -DHAVE_PYTHON -DPANGO_DEFAULT_WIN_URI=\\\"wayland\\\" -D_LINUX_ -I/usr/include/eigen3 -isystem /usr/local/include/eigen3 -g -o CMakeFiles/visualizeGeometry.dir/visualizeGeometry.cpp.o -c /home/victor/slambook2/ch3/visualizeGeometry.cpp",
+  "file": "/home/victor/slambook2/ch3/visualizeGeometry.cpp",
+  "output": "CMakeFiles/visualizeGeometry.dir/visualizeGeometry.cpp.o"
+},
+{
+  "directory": "/home/victor/slambook2/build",
+  "command": "/usr/bin/c++ -DHAVE_EIGEN -DHAVE_EPOXY -DHAVE_PYTHON -DPANGO_DEFAULT_WIN_URI=\\\"wayland\\\" -D_LINUX_ -I/usr/include/eigen3 -isystem /usr/local/include/eigen3 -g -o CMakeFiles/plotTrajectory.dir/plotTrajectory.cpp.o -c /home/victor/slambook2/ch3/plotTrajectory.cpp",
+  "file": "/home/victor/slambook2/ch3/plotTrajectory.cpp",
+  "output": "CMakeFiles/plotTrajectory.dir/plotTrajectory.cpp.o"
+}
+]
