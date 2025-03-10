@@ -117,152 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named imageBasics
+# Target rules for targets named gaussNewton
 
 # Build rule for target.
-imageBasics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imageBasics
-.PHONY : imageBasics
+gaussNewton: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gaussNewton
+.PHONY : gaussNewton
 
 # fast build rule for target.
-imageBasics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/build
-.PHONY : imageBasics/fast
+gaussNewton/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/build
+.PHONY : gaussNewton/fast
 
-#=============================================================================
-# Target rules for targets named undistortImage
-
-# Build rule for target.
-undistortImage: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 undistortImage
-.PHONY : undistortImage
-
-# fast build rule for target.
-undistortImage/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/build
-.PHONY : undistortImage/fast
-
-#=============================================================================
-# Target rules for targets named stereoVision
-
-# Build rule for target.
-stereoVision: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stereoVision
-.PHONY : stereoVision
-
-# fast build rule for target.
-stereoVision/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/build
-.PHONY : stereoVision/fast
-
-#=============================================================================
-# Target rules for targets named jointMap
-
-# Build rule for target.
-jointMap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 jointMap
-.PHONY : jointMap
-
-# fast build rule for target.
-jointMap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/build
-.PHONY : jointMap/fast
-
-imageBasics.o: imageBasics.cpp.o
-.PHONY : imageBasics.o
+gaussNewton.o: gaussNewton.cpp.o
+.PHONY : gaussNewton.o
 
 # target to build an object file
-imageBasics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.cpp.o
-.PHONY : imageBasics.cpp.o
+gaussNewton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o
+.PHONY : gaussNewton.cpp.o
 
-imageBasics.i: imageBasics.cpp.i
-.PHONY : imageBasics.i
-
-# target to preprocess a source file
-imageBasics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.cpp.i
-.PHONY : imageBasics.cpp.i
-
-imageBasics.s: imageBasics.cpp.s
-.PHONY : imageBasics.s
-
-# target to generate assembly for a file
-imageBasics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageBasics.dir/build.make CMakeFiles/imageBasics.dir/imageBasics.cpp.s
-.PHONY : imageBasics.cpp.s
-
-jointMap.o: jointMap.cpp.o
-.PHONY : jointMap.o
-
-# target to build an object file
-jointMap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/jointMap.cpp.o
-.PHONY : jointMap.cpp.o
-
-jointMap.i: jointMap.cpp.i
-.PHONY : jointMap.i
+gaussNewton.i: gaussNewton.cpp.i
+.PHONY : gaussNewton.i
 
 # target to preprocess a source file
-jointMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/jointMap.cpp.i
-.PHONY : jointMap.cpp.i
+gaussNewton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/gaussNewton.cpp.i
+.PHONY : gaussNewton.cpp.i
 
-jointMap.s: jointMap.cpp.s
-.PHONY : jointMap.s
-
-# target to generate assembly for a file
-jointMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jointMap.dir/build.make CMakeFiles/jointMap.dir/jointMap.cpp.s
-.PHONY : jointMap.cpp.s
-
-stereoVision.o: stereoVision.cpp.o
-.PHONY : stereoVision.o
-
-# target to build an object file
-stereoVision.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/stereoVision.cpp.o
-.PHONY : stereoVision.cpp.o
-
-stereoVision.i: stereoVision.cpp.i
-.PHONY : stereoVision.i
-
-# target to preprocess a source file
-stereoVision.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/stereoVision.cpp.i
-.PHONY : stereoVision.cpp.i
-
-stereoVision.s: stereoVision.cpp.s
-.PHONY : stereoVision.s
+gaussNewton.s: gaussNewton.cpp.s
+.PHONY : gaussNewton.s
 
 # target to generate assembly for a file
-stereoVision.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereoVision.dir/build.make CMakeFiles/stereoVision.dir/stereoVision.cpp.s
-.PHONY : stereoVision.cpp.s
-
-undistortImage.o: undistortImage.cpp.o
-.PHONY : undistortImage.o
-
-# target to build an object file
-undistortImage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.o
-.PHONY : undistortImage.cpp.o
-
-undistortImage.i: undistortImage.cpp.i
-.PHONY : undistortImage.i
-
-# target to preprocess a source file
-undistortImage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.i
-.PHONY : undistortImage.cpp.i
-
-undistortImage.s: undistortImage.cpp.s
-.PHONY : undistortImage.s
-
-# target to generate assembly for a file
-undistortImage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/undistortImage.dir/build.make CMakeFiles/undistortImage.dir/undistortImage.cpp.s
-.PHONY : undistortImage.cpp.s
+gaussNewton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/gaussNewton.cpp.s
+.PHONY : gaussNewton.cpp.s
 
 # Help Target
 help:
@@ -272,22 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... imageBasics"
-	@echo "... jointMap"
-	@echo "... stereoVision"
-	@echo "... undistortImage"
-	@echo "... imageBasics.o"
-	@echo "... imageBasics.i"
-	@echo "... imageBasics.s"
-	@echo "... jointMap.o"
-	@echo "... jointMap.i"
-	@echo "... jointMap.s"
-	@echo "... stereoVision.o"
-	@echo "... stereoVision.i"
-	@echo "... stereoVision.s"
-	@echo "... undistortImage.o"
-	@echo "... undistortImage.i"
-	@echo "... undistortImage.s"
+	@echo "... gaussNewton"
+	@echo "... gaussNewton.o"
+	@echo "... gaussNewton.i"
+	@echo "... gaussNewton.s"
 .PHONY : help
 
 

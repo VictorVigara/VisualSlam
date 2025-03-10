@@ -23,7 +23,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake"
-  "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeGenericSystem.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake"
@@ -37,9 +36,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeUnixFindMake.cmake"
-  "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake"
-  "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CheckIncludeFile.cmake"
-  "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/CheckLibraryExists.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
@@ -96,11 +92,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
-  "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindOpenGL.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindPackageMessage.cmake"
-  "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake"
-  "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Platform/Linux-Determine-CXX.cmake"
   "/home/victor/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake"
@@ -116,16 +109,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake"
-  "/usr/local/lib/cmake/Pangolin/PangolinConfig.cmake"
-  "/usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake"
-  "/usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake"
-  "/usr/local/lib/cmake/Pangolin/PangolinTargets.cmake"
-  "/usr/local/share/eigen3/cmake/Eigen3Config.cmake"
-  "/usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake"
-  "/usr/local/share/eigen3/cmake/Eigen3Targets.cmake"
-  "/usr/local/share/sophus/cmake/SophusConfig.cmake"
-  "/usr/local/share/sophus/cmake/SophusConfigVersion.cmake"
-  "/usr/local/share/sophus/cmake/SophusTargets.cmake"
   )
 
 # The corresponding makefile is:
@@ -146,8 +129,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/imageBasics.dir/DependInfo.cmake"
-  "CMakeFiles/undistortImage.dir/DependInfo.cmake"
-  "CMakeFiles/stereoVision.dir/DependInfo.cmake"
-  "CMakeFiles/jointMap.dir/DependInfo.cmake"
+  "CMakeFiles/gaussNewton.dir/DependInfo.cmake"
   )

@@ -1,35 +1,19 @@
-# Minimum required CMake version
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required( VERSION 2.8 )
 
-# Project name
-project(imageBasics)
-
-# Set C++ standard
+project(ch5)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Find dependencies
+# OpenCV
 find_package(OpenCV REQUIRED)
-find_package(Eigen3 REQUIRED)
-find_package(Pangolin REQUIRED)
-find_package(Sophus REQUIRED)
-
-# Include directories
 include_directories(${OpenCV_INCLUDE_DIRS})
-include_directories(${Eigen3_INCLUDE_DIRS})
-include_directories(${Pangolin_INCLUDE_DIRS})
-include_directories(${Sophus_INCLUDE_DIRS})
 
-# Executables and linking
-add_executable(imageBasics imageBasics.cpp)
-target_link_libraries(imageBasics ${OpenCV_LIBS})
+# Eigen
+include_directories("/usr/include/eigen3")
 
-add_executable(undistortImage undistortImage.cpp)
-target_link_libraries(undistortImage ${OpenCV_LIBS})
+# Ceres
+find_package(Ceres REQUIRED)
+include_directories(${CERES_INCLUDE_DIRS})
 
-add_executable(stereoVision stereoVision.cpp)
-target_link_libraries(stereoVision ${OpenCV_LIBS} Eigen3::Eigen ${Pangolin_LIBRARIES})
-
-add_executable(jointMap jointMap.cpp)
-target_link_libraries(jointMap ${OpenCV_LIBS} ${Pangolin_LIBRARIES} ${Sophus_LIBRARIES})
+add_executable(gaussNewton gaussNewton.cpp)
+target_link_libraries(gaussNewton ${OpenCV_LIBS})
